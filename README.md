@@ -25,8 +25,8 @@ Current focus: improving retrieval quality, grounding, and evaluation metrics fo
 
 ## Tech stack
 - Languages: Python  
-- Libraries & Frameworks: LangChain, SentenceTransformers, FastAPI, Quart  
-- Vector stores: ChromaDB, FAISS  
+- Libraries & Frameworks: LangChain, SentenceTransformers, QuartAPI  
+- Vector stores: ChromaDB  
 - Infrastructure: Docker, Docker Compose (for dev & production-like local stacks)  
 - Other: embeddings, retrievers, rerankers, evaluation tooling, metrics, experiment tracking
 
@@ -35,21 +35,10 @@ Current focus: improving retrieval quality, grounding, and evaluation metrics fo
 ## Example RAG pipeline (high level)
 1. Ingest documents (PDF, HTML, DOCX) → structure-aware parsing  
 2. Chunk with semantic & layout-aware strategies (keep context for tables, headings, code blocks)  
-3. Generate embeddings (SentenceTransformers or OpenAI embeddings) and store in vector DB (Chroma / FAISS)  
+3. Generate embeddings (SentenceTransformers) and store in vector DB (Chroma)  
 4. Retrieve with metadata filters → rerank with cross-encoder / reranker model  
 5. Compose prompt with retrieved context → call LLM (local or cloud) with grounding controls  
 6. Evaluate: retrieval metrics, factuality checks, attribution scoring, and user-feedback loop
-
----
-
-## Selected projects
-(Replace these with links to your repos or pin them on your profile)
-- RAG-Pipeline — production-ready retrieval stack with ingestion, chunking, and evaluation.  
-  Repo: https://github.com/khoi01/rag-pipeline
-- doc-ingest — PDF & document ingestion toolkit with layout-aware chunking.  
-  Repo: https://github.com/khoi01/doc-ingest
-- local-llm-deploy — Dockerized local LLM deployment patterns (Ollama + vector DB).  
-  Repo: https://github.com/khoi01/local-llm-deploy
 
 ---
 
@@ -59,35 +48,3 @@ Current focus: improving retrieval quality, grounding, and evaluation metrics fo
 - End-to-end: human evaluation, task success rate, latency & cost tradeoffs
 
 ---
-
-## Getting in touch
-- Email: your.email@example.com
-- LinkedIn: https://www.linkedin.com/in/your-linkedin
-- Twitter/X: https://twitter.com/your-twitter
-- Website / Portfolio: https://your-website.example
-
-(Replace the placeholders above with your preferred contact links.)
-
----
-
-## GitHub stats
-![khoi01's GitHub stats](https://github-readme-stats.vercel.app/api?username=khoi01&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=khoi01&layout=compact&theme=tokyonight)
-
----
-
-## Collaboration & opportunities
-- I’m open to collaboration on RAG/IR-focused projects, integrations between retrieval systems and LLMs, and productionization of document intelligence systems.  
-- If you have datasets, evaluation problems, or real-world use cases for RAG, let's connect.
-
----
-
-## Quick notes for customizing this README
-- Pin and link your top repos in the "Selected projects" section.  
-- Replace contact placeholders with real links.  
-- Add demos, architecture diagrams, or short GIFs to show your systems in action.  
-- Consider adding badges (shields.io) for email, deployments, or build status.
-
----
-
-Thanks for visiting — feel free to open an issue or contact me if you'd like to collaborate!

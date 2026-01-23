@@ -2,7 +2,6 @@
 > 🤖 AI & RAG Engineer | Applied ML Practitioner  
 > Building production-ready AI systems with a strong focus on Retrieval-Augmented Generation (RAG), document intelligence, and automation.
 
-Last updated: 2025-12-30
 
 ---
 
